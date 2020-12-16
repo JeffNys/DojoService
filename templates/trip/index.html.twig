@@ -9,6 +9,8 @@
     <thead>
         <tr>
             <th>Id</th>
+            <th>From</th>
+            <th>To</th>
             <th>Distance</th>
             <th>actions</th>
         </tr>
@@ -17,6 +19,8 @@
         {% for trip in trips %}
         <tr>
             <td>{{ trip.id }}</td>
+            <td>{{ trip.fromCity.name}}</td>
+            <td>{{ trip.toCity.name}}</td>
             <td>{{ trip.distance / 1000}} Km</td>
             <td>
                 <a href="{{ path('trip_show', {'id': trip.id}) }}">show</a>

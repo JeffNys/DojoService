@@ -12,6 +12,14 @@
             <td>{{ trip.id }}</td>
         </tr>
         <tr>
+            <th>From</th>
+            <td>{{ trip.fromCity.name}}</td>
+        </tr>
+        <tr>
+            <th>To</th>
+            <td>{{ trip.toCity.name}}</td>
+        </tr>
+        <tr>
             <th>Distance</th>
             <td>{{ trip.distance / 1000 }} Km</td>
         </tr>
